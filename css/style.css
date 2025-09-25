@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #80091b;
+}
+
+h1 {
+    color: #80091b;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #80091b;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main Content Box */
+
+main{
+    text-align: center;
+}
+.box {
+    height: auto; /* Use auto for dynamic height */
+    width: 300px;
+    border: 2px solid #80091b;
+    border-radius: 10px;
+    background-color: #bb203732;
+    box-shadow: 10px 10px 10px 0px rgb(136, 135, 135);
+    padding: 20px;
+    margin: 20px auto; /* Center the box */
+    text-align: center;
+}
+
+/* Float-based Layouts */
+.float-container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.float-left {
+    float: left;
+    margin-right: 20px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 20px;
+}
+
+/* Gallery-specific Styles */
+.gallery-grid {
+    margin: 20px auto;
+    width: 90%;
+}
+
+.gallery-grid img {
+    float: left;
+    width: 30%;
+    margin: 1.66%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #80091b;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
